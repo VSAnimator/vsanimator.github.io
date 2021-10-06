@@ -24,5 +24,5 @@ I am a Ph.D. student at Stanford University, co-advised by [Chris Ré](https://c
 ## Projects
 
 ***Forager: Rapid Data Exploration and Model Development***
-<br> Fait Poms, Mihir Garimella, **Vishnu Sarukkai**, Ravi Teja Mullapudi, Jeremy Barenholtz, and Kayvon Fatahalian.
+<br> Fait Poms, Mihir Garimella, **Vishnu Sarukkai**, Ravi Teja Mullapudi, Jeremy Barenholtz, and Kayvon Fatahalian
 <br> <sup>\[[Demo](https://www.youtube.com/watch?v=qFzIgc5tc9s)\]<sup>
