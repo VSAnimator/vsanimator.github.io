@@ -4,7 +4,7 @@ title: Data-Efficient Model Validation
 permalink: /acis/
 ---
 
-*Fait Poms\*, Vishnu Sarukkai\*, Ravi Teja Mullapudi, Nimit Sohoni, Bill Mark, Deva Ramanan, and Kayvon Fatahalian*
+*Fait Poms\*, **Vishnu Sarukkai**\*, Ravi Teja Mullapudi, Nimit Sohoni, Bill Mark, Deva Ramanan, and Kayvon Fatahalian*
 
 In recent years, the machine learning community has made significant progress towards reducing the amount of labeled training data required to build effective models. In the computer vision community, semi-supervised techniques such as [SwAV](https://arxiv.org/abs/2006.09882) make it possible to train competitive models with labels for less than 5% of the ImageNet train dataset. 
 
