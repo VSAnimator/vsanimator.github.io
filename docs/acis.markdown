@@ -16,19 +16,19 @@ However, when constructing a model from scratch, both training and validation re
 
 In ICCV 2021, [our paper](https://openaccess.thecvf.com/content/ICCV2021/papers/Poms_Low-Shot_Validation_Active_Importance_Sampling_for_Estimating_Classifier_Performance_on_ICCV_2021_paper.pdf) focuses on sample-efficient model validation for binary classifiers for rare categories. These classifiers are valuable across a variety of real-world scenarios, and rare categories pose a particularly difficult problem for validation because of how hard it is to find the positive instances in the dataset.
 
-We aim to estimate the F-Score of our binary classifiers. F-Scores are a generalized family of metrics that depend on true positive (tp), false positive (fp), and false negative (fn) counts. The equation is parameterized by alpha:
+We aim to estimate the F-Score of our binary classifiers. F-Scores are a generalized family of metrics that depend on true positive (tp), false positive (fp), and false negative (fn) counts. The equation is parameterized by \alpha:
 
 ![](/acis/fscore.png)
 
-Setting alpha to different values yields several common validation metrics. Setting alpha to 1, we can compute precision:
+Setting \alpha to different values yields several common validation metrics. Setting \alpha to 1, we can compute precision:
 
 ![](/acis/precision.png){:width="420"}
 
-Setting alpha to 0, we can compute recall:
+Setting \alpha to 0, we can compute recall:
 
 ![](/acis/recall.png){:width="420"}
 
-Setting alpha to 0.5, we can compute F1:
+Setting \alpha to 0.5, we can compute F1:
 
 ![](/acis/f1.png){:width="420"}
 
@@ -50,7 +50,7 @@ Importance sampling has given us the theory to estimate the F-Score that would h
 
 ![](/acis/sawade.png)
 
-Where x is a given image in the domain, y is the ground-truth label, G is the ground-truth F-Score, and alpha is defined by the F-Score that we are estimating. While the details of this formulation are described in [our paper](https://openaccess.thecvf.com/content/ICCV2021/papers/Poms_Low-Shot_Validation_Active_Importance_Sampling_for_Estimating_Classifier_Performance_on_ICCV_2021_paper.pdf), a key detail in Sawade’s method is that Sawade’s formulation of the sampling distribution q-star depends on knowing p(y=1\|x), the probability that any given image is a ground-truth positive. 
+Where x is a given image in the domain, y is the ground-truth label, G is the ground-truth F-Score, and \alpha is defined by the F-Score that we are estimating. While the details of this formulation are described in [our paper](https://openaccess.thecvf.com/content/ICCV2021/papers/Poms_Low-Shot_Validation_Active_Importance_Sampling_for_Estimating_Classifier_Performance_on_ICCV_2021_paper.pdf), a key detail in Sawade’s method is that Sawade’s formulation of the sampling distribution q-star depends on knowing p(y=1\|x), the probability that any given image is a ground-truth positive. 
 
 Sawade et al approximate this quantity by assuming the model is well-calibrated, but this assumption [does not hold](https://arxiv.org/abs/1706.04599) for many modern neural networks. This implies that we need to calibrate our models in order to leverage Sawade et al.’s work. But calibration in turn requires labeled datasets.
 
@@ -80,6 +80,8 @@ In order to test the impact of ACIS on validation performance, we validated bina
 2. [Isotonic regression](https://dl.acm.org/doi/abs/10.1145/775047.775151) (ISO), leveraging calibration without importance sampling in order to directly impute true positive, false positive, and false negative counts to estimate the F-Score
 3. [Gaussian Mixture Models](http://proceedings.mlr.press/v88/miller18a/miller18a.pdf) (GMM)
 4. [Top-K sampling](https://arxiv.org/abs/1801.05605) (TOP-K)
+
+We measure performance in terms of the Mean Squared Error (MSE) of the estimated F1 compared to the F1 computed on the full dataset, and lower MSE values are better. We display experimetal results on log-log plots to highlight the dynamics between labeling budget and MSE: 
 
 ![](/acis/imagenet.png)
 
