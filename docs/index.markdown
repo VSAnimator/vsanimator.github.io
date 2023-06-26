@@ -5,9 +5,13 @@
 layout: page
 ---
 
-I am a Ph.D. student at Stanford University, co-advised by [Chris Ré](https://cs.stanford.edu/~chrismre/) and [Kayvon Fatahalian](http://graphics.stanford.edu/~kayvonf/). My broad interests include machine learning and raytracing, and my recent work has focused on efficient model evaluation. Prior to my Ph.D, I received a B.S. in Computer Science at Stanford. In the past, I have worked with [Pat Hanrahan](https://profiles.stanford.edu/patrick-hanrahan) on metropolis light transport and path guiding, with [Stefano Ermon](https://cs.stanford.edu/~ermon/) on applications of GANs to satellite images, and with [Susan Athey](https://www.gsb.stanford.edu/faculty-research/faculty/susan-athey) on the dynamics of Bitcoin usage.
+I am a Ph.D. student at Stanford University, co-advised by [Chris Ré](https://cs.stanford.edu/~chrismre/) and [Kayvon Fatahalian](http://graphics.stanford.edu/~kayvonf/). My broad interests include machine learning and computer graphics, and my recent work has focused on controllable diffusion models. Prior to my Ph.D, I received a B.S. in Computer Science at Stanford. In the past, I have worked with [Pat Hanrahan](https://profiles.stanford.edu/patrick-hanrahan) on metropolis light transport and path guiding, with [Stefano Ermon](https://cs.stanford.edu/~ermon/) on applications of GANs to satellite images, and with [Susan Athey](https://www.gsb.stanford.edu/faculty-research/faculty/susan-athey) on the dynamics of Bitcoin usage.
 
 ## Publications
+
+***Collage Diffusion***
+<br> **Vishnu Sarukkai**, Linden Li, Arden Ma, Chris Ré, and Kayvon Fatahalian. *Arxiv, 2023*. 
+<br> <sup> \[[Paper](https://arxiv.org/abs/2303.00262)\] \[[Code](https://github.com/VSAnimator/collage-diffusion)\]<sup>
 
 ***Low-Shot Validation: Active Importance Sampling for Estimating Classifier Performance on Rare Categories***
 <br> Fait Poms\*, **Vishnu Sarukkai**\*, Ravi Teja Mullapudi, Nimit S. Sohoni, William R. Mark, Deva Ramanan, and Kayvon Fatahalian. *International Conference on Computer Vision (ICCV), 2021,* ***Oral Presentation***.
