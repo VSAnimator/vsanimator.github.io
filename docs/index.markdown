@@ -9,7 +9,7 @@ I am a Ph.D. student at Stanford University, co-advised by [Chris Ré](https://c
 
 ## Publications
 
-***Collage Diffusion***
+***Layered Diffusion***
 <br> **Vishnu Sarukkai**, Linden Li, Arden Ma, Chris Ré, and Kayvon Fatahalian. *Arxiv, 2023*. 
 <br> <sup> \[[Paper](https://arxiv.org/abs/2303.00262)\] \[[Code](https://github.com/VSAnimator/collage-diffusion)\]<sup>
 
