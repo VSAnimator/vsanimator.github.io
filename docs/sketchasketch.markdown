@@ -17,7 +17,7 @@ permalink: /sketchasketch/
 |:--:| :--: | :--: |
 | ![](Sketch-a-Sketch/castle_s.gif) | ![](Sketch-a-Sketch/castle_o1.gif) | ![](Sketch-a-Sketch/castle_p.gif) |
 
-It’s really fun playing with generative AI tools, but its incredibly hard to engineer text prompts that get them to create the image you want. You’ve probably seen sketch-to-image tools that aim to make it "easier" to control generative AI, but to get a good image, you typically need to start with a fairly complete sketch. Since most of us aren’t great sketchers, that’s prevented most of us from using sketch to image. 
+It’s really fun playing with generative AI tools, but its incredibly hard to engineer text prompts that get them to create the image you want. You’ve probably seen sketch-to-image tools that aim to make it "easier" to control generative AI, but to get a good image, you typically need to control the AI with a fairly complete sketch. Since most of us aren’t great sketchers, that’s prevented most of us from using sketch to image. 
 
 ***Sketch-a-Sketch* makes it much easier to control the output of generative AI from sketches, because it works using simple sketches that only have a few strokes -- sketches that most of us can draw.**
 
