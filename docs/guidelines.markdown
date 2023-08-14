@@ -1,10 +1,9 @@
 ---
 layout: home
-title: Controllable Image Generation
+title: GuideLines
+description: Controllable Diffusion-Based Image Generation with Just a Few Strokes
 permalink: /guidelines/
 ---
-
-# GuideLines: Controllable Diffusion-Based Image Generation with Just a Few Strokes
 
 **Vishnu Sarukkai**\, Chris Ré, and Kayvon Fatahalian
 
