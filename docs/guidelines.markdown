@@ -1,6 +1,6 @@
 ---
 layout: home
-title: GuideLines: Controllable diffusion-based image generation with just a few strokes
+title: "GuideLines: Controllable diffusion-based image generation with just a few strokes"
 permalink: /guidelines/
 ---
 
