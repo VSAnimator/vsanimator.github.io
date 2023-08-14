@@ -5,7 +5,7 @@ description: Controllable Diffusion-Based Image Generation with Just a Few Strok
 permalink: /sketchasketch/
 ---
 
-## Controllable diffusion-based image generation with just a few strokes
+## Controlling diffusion-based image generation with just a few strokes
 
 **Vishnu Sarukkai**, Chris Ré, and Kayvon Fatahalian
 
@@ -13,43 +13,44 @@ permalink: /sketchasketch/
 
 **"A medieval castle, realistic"**
 
-| **Input Sketch** | **Generated Image** | **Guiding Sketch**
+| **Input Sketch** | **Generated Image** | **Suggested Lines**
 |:--:| :--: | :--: |
 | ![](Sketch-a-Sketch/castle_s.gif) | ![](Sketch-a-Sketch/castle_o1.gif) | ![](Sketch-a-Sketch/castle_p.gif) |
 
 It’s really fun playing with generative AI tools, but its incredibly hard to engineer text prompts that get them to create the image you want. You’ve probably seen sketch-to-image tools that aim to make it "easier" to control generative AI, but to get a good image, you typically need to start with a fairly complete sketch. Since most of us aren’t great sketchers, that’s prevented most of us from using sketch to image. 
 
 ***Sketch-a-Sketch* makes it much easier to control the output of generative AI from sketches, because it works using simple sketches that only have a few strokes -- sketches that most of us can draw.**
+
 To give you an idea of how it works, think about the game of Pictionary, where your teammates must guess the object you are trying to draw as quickly as possible. If you’re good at the game, your teammates will guess what you’re trying to depict after just a few strokes (a partial sketch). If your team can’t guess what you’re trying to draw, you just keep sketching to add detail in order to make the concept more clear.
 
 With *Sketch-a-Sketch*, controlling generative AI is lot like playing Pictionary: just sketch a few strokes, and the AI will guess what you are trying to draw and give you suggestions for high-quality final images.
 If the AI isn’t giving you the images you want, don’t worry. Just draw a few more strokes to make your desired image more clear, and keep iterating until the AI creates the images you hoped for.
 
-Even better, *Sketch-a-Sketch* will help you create "winning" sketches. As you sketch, the *Sketch-a-Sketch* system will show you a "guiding sketch" with possibilities for future lines that will be most helpful in helping the AI guess what final image you want.
+Even better, *Sketch-a-Sketch* will help you create "winning" sketches. As you sketch, the *Sketch-a-Sketch* system will show you suggested future lines that will be most helpful in helping the AI guess what final image you want.
 
-Here are a few examples, displaying 1) the user-drawn input sketch, 2) a *Sketch-a-Sketch*-generated image, and 3) a "guiding sketch" with possibilities for future lines:
+Here are a few examples, displaying 1) the user-drawn input sketch, 2) a *Sketch-a-Sketch*-generated image, and 3) suggested lines:
 
 **"A ceramic mug"**
 
-| **Input Sketch** | **Generated Image** | **Guiding Sketch**
+| **Input Sketch** | **Generated Image** | **Suggested Lines**
 |:--:| :--: | :--: |
 | ![](Sketch-a-Sketch/mug_s.gif) | ![](Sketch-a-Sketch/mug_o1.gif) | ![](Sketch-a-Sketch/mug_p.gif) |
 
 **"A hobbit house with a mailbox"**
 
-| **Input Sketch** | **Generated Image** | **Guiding Sketch**
+| **Input Sketch** | **Generated Image** | **Suggested Lines**
 |:--:| :--: | :--: |
 | ![](Sketch-a-Sketch/hobbit_s.gif) | ![](Sketch-a-Sketch/hobbit_o1.gif) | ![](Sketch-a-Sketch/hobbit_p.gif) |
 
 **"A lighthouse at the edge of the ocean"**
 
-| **Input Sketch** | **Generated Image** | **Guiding Sketch**
+| **Input Sketch** | **Generated Image** | **Suggested Lines**
 |:--:| :--: | :--: |
 | ![](Sketch-a-Sketch/light_s.gif) | ![](Sketch-a-Sketch/light_o1.gif) | ![](Sketch-a-Sketch/light_p.gif) |
 
 **"A row of brown shoes"**
 
-| **Input Sketch** | **Generated Image** | **Guiding Sketch**
+| **Input Sketch** | **Generated Image** | **Suggested Lines**
 |:--:| :--: | :--: |
 | ![](Sketch-a-Sketch/shoe_s.gif) | ![](Sketch-a-Sketch/shoe_o1.gif) | ![](Sketch-a-Sketch/shoe_p.gif) |
 
@@ -91,9 +92,9 @@ When an artist isn't quite sure how they'd like to draw a part of an image, we c
 
 ![](Sketch-a-Sketch/Sketch-a-Sketch/Sketch-a-Sketch.001.jpeg)
 
-## Help me draw
+## Provide suggested lines to help me draw
 
-With these generated images, *Sketch-a-Sketch* can provide suggestions on potential lines to draw: we generate potential completions of the existing drawing by running HED on the generated images, then averaging these 'completed sketches' to get a 'guiding sketch': 
+With these generated images, *Sketch-a-Sketch* can provide suggestions on potential lines to draw: we generate potential completions of the existing drawing by running HED on the generated images, then averaging these 'completed sketches' to get an image of suggested lines: 
 
 ![](Sketch-a-Sketch/Sketch-a-Sketch/Sketch-a-Sketch.002.jpeg)
 
@@ -105,25 +106,25 @@ The image caption and underlying diffusion backbone can significantly influence 
 
 **"A sports car, realistic"**
 
-| **Input Sketch** | **Generated Image** | **Guiding Sketch**
+| **Input Sketch** | **Generated Image** | **Suggested Lines**
 |:--:| :--: | :--: |
 | ![](Sketch-a-Sketch/car_s.gif) | ![](Sketch-a-Sketch/car_v1_o1.gif) | ![](Sketch-a-Sketch/car_v1_p.gif) |
 
 **"A sports car, cartoon"**
 
-| **Input Sketch** | **Generated Image** | **Guiding Sketch**
+| **Input Sketch** | **Generated Image** | **Suggested Lines**
 |:--:| :--: | :--: |
 | ![](Sketch-a-Sketch/car_s.gif) | ![](Sketch-a-Sketch/car_v2_o1.gif) | ![](Sketch-a-Sketch/car_v2_p.gif) |
 
 **"A sports car, cel shaded"**
 
-| **Input Sketch** | **Generated Image** | **Guiding Sketch**
+| **Input Sketch** | **Generated Image** | **Suggested Lines**
 |:--:| :--: | :--: |
 | ![](Sketch-a-Sketch/car_s.gif) | ![](Sketch-a-Sketch/car_v3_o1.gif) | ![](Sketch-a-Sketch/car_v3_p.gif) |
 
 **"A sports car, rusted"**
 
-| **Input Sketch** | **Generated Image** | **Guiding Sketch**
+| **Input Sketch** | **Generated Image** | **Suggested Lines**
 |:--:| :--: | :--: |
 | ![](Sketch-a-Sketch/car_s.gif) | ![](Sketch-a-Sketch/car_v4_o1.gif) | ![](Sketch-a-Sketch/car_v4_p.gif) |
 
@@ -133,7 +134,7 @@ We have previously seen that a ControlNet trained on one backbone (ex. Stable Di
 
 **"A young boy"**
 
-| **Input Sketch** | **Generated Image** | **Guiding Sketch**
+| **Input Sketch** | **Generated Image** | **Suggested Lines**
 |:--:| :--: | :--: |
 | ![](Sketch-a-Sketch/ghibli_s.gif) | ![](Sketch-a-Sketch/ghibli_o1.gif) | ![](Sketch-a-Sketch/ghibli_p.gif) |
 
