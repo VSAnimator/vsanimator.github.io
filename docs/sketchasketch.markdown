@@ -5,7 +5,7 @@ description: Controllable Diffusion-Based Image Generation with Just a Few Strok
 permalink: /sketchasketch/
 ---
 
-## Controllable Diffusion-Based Image Generation with Just a Few Strokes
+## Controllable diffusion-based image generation with just a few strokes
 
 **Vishnu Sarukkai**, Chris Ré, and Kayvon Fatahalian
 
@@ -59,7 +59,7 @@ Existing methods for sketch-controlled image generation include [ControlNet](htt
 
 In *Sketch-a-Sketch*, we introduce a ControlNet model that generates images conditioned on *partial sketches*. With this ControlNet, *Sketch-a-Sketch* 1) generates images corresponding to a sketch at various stages of the sketching process, and 2) leverages these images to generate suggested lines that can help guide the artistic process. 
 
-## Existing methods don't work with partial sketches
+## Problem: Existing methods don't work with partial sketches
 
 Prior work is trained on paired datasets of images and completed sketches. When attempting to generate an image from a partial sketch, these methods treat the sketch as completed, so the whitespace in the rest of the sketch is treated as an indicator that the image should not have content that would typically correspond to a stroke in the input sketch. 
 
@@ -71,7 +71,7 @@ For instance, given the first few lines of a house, ControlNet fails to generate
 | :--: | :--: | :--: |
 | ![](Sketch-a-Sketch/house_sketch.png) | ![](Sketch-a-Sketch/controlnet_3.png) | ![](Sketch-a-Sketch/controlnet_2.png) |
 
-## Make partial sketches by randomly deleting lines
+## Make training data: Make partial sketches by randomly deleting lines
 
 [Photo-Sketch](https://mtli.github.io/sketch/) is the largest existing dataset of text-captioned images paired with sketches at partial stages of completion. However, this dataset is 1) restricted to sketches of only 1000 images (we would like a larger dataset), 2) the images are all of outdoor scenes (lacking diversity for general text-conditioned generation), and 3) are constructed by tracing over an existing image (imposing a ordering of strokes that may not correspond to the sketching process of many artists). 
 
@@ -97,9 +97,9 @@ With these generated images, *Sketch-a-Sketch* can provide suggestions on potent
 
 ![](Sketch-a-Sketch/Sketch-a-Sketch/Sketch-a-Sketch.002.jpeg)
 
-# Controlling visualizations
+# Controlling image output
 
-## Change the style
+## Changing the style
 
 The image caption and underlying diffusion backbone can significantly influence both the image visualizations and suggested lines. As with other text-controlled diffusion applications, we can modify the style or content of the generated images through prompting. In the following drawings, we control the style of visualizations for a sports car by changing a single word:
 
@@ -127,7 +127,7 @@ The image caption and underlying diffusion backbone can significantly influence 
 |:--:| :--: | :--: |
 | ![](Sketch-a-Sketch/car_s.gif) | ![](Sketch-a-Sketch/car_v4_o1.gif) | ![](Sketch-a-Sketch/car_v4_p.gif) |
 
-## Change the backbone
+## Changing the backbone
 
 We have previously seen that a ControlNet trained on one backbone (ex. Stable Diffusion 1.5) still works on fine-tuned versions of that backbone. This property also holds for our partial-sketch ControlNet model, enabling *Sketch-a-Sketch* to generate suggestions from models fine-tuned for particular domains. For instance, we can use [Ghibli Diffusion](https://huggingface.co/nitrosocke/Ghibli-Diffusion) to generate Ghibli-style characters:
 
