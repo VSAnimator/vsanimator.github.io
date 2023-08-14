@@ -9,7 +9,7 @@ permalink: /guidelines/
 
 **Vishnu Sarukkai**, Chris Ré, and Kayvon Fatahalian
 
-**[Code](https://github.com/VSAnimator/guidelines) | [Demo](https://colab.research.google.com/drive/1Biw7s0BD_NtV3wC2lIjVaeg6qXj0KOTv?usp=sharing)**
+**[Code](https://github.com/VSAnimator/guidelines) \| [Demo](https://colab.research.google.com/drive/1Biw7s0BD_NtV3wC2lIjVaeg6qXj0KOTv?usp=sharing)**
 
 **"A medieval castle, realistic"**
 
