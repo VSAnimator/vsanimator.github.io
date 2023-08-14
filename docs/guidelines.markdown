@@ -1,10 +1,12 @@
 ---
 layout: home
-title: GuideLines: Controllable Diffusion-Based Image Generation with Just a Few Strokes
+title: Controllable Image Generation
 permalink: /guidelines/
 ---
 
-**Vishnu Sarukkai**, Chris Ré, and Kayvon Fatahalian
+# GuideLines: Controllable Diffusion-Based Image Generation with Just a Few Strokes
+
+**Vishnu Sarukkai**\, Chris Ré, and Kayvon Fatahalian
 
 **[Code](https://github.com/VSAnimator/guidelines) | [Demo](https://colab.research.google.com/drive/1Biw7s0BD_NtV3wC2lIjVaeg6qXj0KOTv?usp=sharing)**
 
