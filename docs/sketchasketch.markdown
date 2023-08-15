@@ -11,11 +11,11 @@ permalink: /sketchasketch/
 
 **[Code](https://github.com/VSAnimator/Sketch-a-Sketch) \| [Demo](https://colab.research.google.com/drive/1Biw7s0BD_NtV3wC2lIjVaeg6qXj0KOTv?usp=sharing)**
 
-It’s really fun playing with generative AI tools, but its incredibly hard to engineer text prompts that produce the specific images you want. You’ve probably seen sketch-to-image tools that aim to make it "easier" to control generative AI, but to get a good image, you typically need to control the AI with a fairly complete sketch. Since most of us aren’t great sketchers, that’s prevented most of us from using sketch to image. 
+It’s really fun playing with generative AI tools, but its incredibly hard to engineer text prompts that produce the specific images you want. You’ve probably seen sketch-to-image tools that aim to make it "easier" to control generative AI, but to get a good image, you typically need to control the AI with a fairly complete sketch. Since most of us are not great at drawing, that’s prevented most of us from using sketch to image. 
 
 ***Sketch-a-Sketch* makes it much easier to control the output of generative AI from sketches, because it works using simple sketches that only have a few strokes -- sketches that most of us can draw.**
 
-**"A medieval castle, realistic"**
+**Prompt: "A medieval castle, realistic"**
 
 | **Input Sketch** | **Generated Image** | **Suggested Lines**
 |:--:| :--: | :--: |
@@ -30,25 +30,25 @@ Even better, *Sketch-a-Sketch* will help you create "winning" sketches. As you s
 
 Here are a few examples, displaying 1) the user-drawn input sketch, 2) a *Sketch-a-Sketch*-generated image, and 3) suggested lines:
 
-**"A ceramic mug"**
+**Prompt: "A ceramic mug"**
 
 | **Input Sketch** | **Generated Image** | **Suggested Lines**
 |:--:| :--: | :--: |
 | ![](Sketch-a-Sketch/mug_s.gif) | ![](Sketch-a-Sketch/mug_o1.gif) | ![](Sketch-a-Sketch/mug_p.gif) |
 
-**"A hobbit house with a mailbox"**
+**Prompt: "A hobbit house with a mailbox"**
 
 | **Input Sketch** | **Generated Image** | **Suggested Lines**
 |:--:| :--: | :--: |
 | ![](Sketch-a-Sketch/hobbit_s.gif) | ![](Sketch-a-Sketch/hobbit_o1.gif) | ![](Sketch-a-Sketch/hobbit_p.gif) |
 
-**"A lighthouse at the edge of the ocean"**
+**Prompt: "A lighthouse at the edge of the ocean"**
 
 | **Input Sketch** | **Generated Image** | **Suggested Lines**
 |:--:| :--: | :--: |
 | ![](Sketch-a-Sketch/light_s.gif) | ![](Sketch-a-Sketch/light_o1.gif) | ![](Sketch-a-Sketch/light_p.gif) |
 
-**"A row of brown shoes"**
+**Prompt: "A row of brown shoes"**
 
 | **Input Sketch** | **Generated Image** | **Suggested Lines**
 |:--:| :--: | :--: |
@@ -56,7 +56,7 @@ Here are a few examples, displaying 1) the user-drawn input sketch, 2) a *Sketch
 
 # How it works
 
-Existing methods for sketch-controlled image generation include [ControlNet](https://github.com/lllyasviel/ControlNet), [Sketch-Guided Diffusion](https://sketch-guided-diffusion.github.io), and [DiffSketching](https://arxiv.org/abs/2305.18812). While existing sketch-to-image methods show promising results, they have one key flaw: they only work on completed sketches. However, **a typical sketching workflow is an iterative process!** Artists progressively add or remove lines, sometimes constructing basic structures before diving into finer details, at other times focusing on one region of an image before moving on to another. Therefore, **we need sketch-to-image functionality at intermediate stages of the sketching process**.
+Existing methods for sketch-controlled image generation include [ControlNet](https://github.com/lllyasviel/ControlNet), [Sketch-Guided Diffusion](https://sketch-guided-diffusion.github.io), and [DiffSketching](https://arxiv.org/abs/2305.18812). While existing sketch-to-image methods show promising results, they have one key flaw: they are trained to work on completed sketches. However, **a typical sketching workflow is an iterative work-in-progress!** Artists progressively add or remove lines, sometimes constructing basic structures before diving into finer details, at other times focusing on one region of an image before moving on to another. Therefore, **we need sketch-to-image functionality at intermediate stages of the sketching process**.
 
 In *Sketch-a-Sketch*, we introduce a ControlNet model that generates images conditioned on *partial sketches*. With this ControlNet, *Sketch-a-Sketch* 1) generates images corresponding to a sketch at various stages of the sketching process, and 2) leverages these images to generate suggested lines that can help guide the artistic process. 
 
@@ -66,7 +66,7 @@ Prior work is trained on paired datasets of images and completed sketches. When 
 
 For instance, given the first few lines of a house, ControlNet fails to generate significant detail outside the region where the lines are drawn:
 
-**"a photorealistic house"**
+**Prompt: "a photorealistic house"**
 
 | **Input Sketch** | **Generated Image 1** | **Generated Image 2** |
 | :--: | :--: | :--: |
@@ -86,13 +86,13 @@ Therefore, we programmatically construct our own dataset of captioned images pai
 
 We construct our paired dataset using 45000 images from [LAION Art](https://huggingface.co/datasets/laion/laion-art), and we train a [ControlNet](https://github.com/lllyasviel/ControlNet) model to condition [Stable Diffusion 1.5](https://huggingface.co/runwayml/stable-diffusion-v1-5) on the image-sketch pairs. The trained model takes a text caption and a partial sketch as inputs, and outputs generated images corresponding to a potential completion of the sketch. 
 
-## Visualize my drawing so far
+## Generating possible images
 
 When an artist isn't quite sure how they'd like to draw a part of an image, we can generate a variety of visual completions given the lines drawn so far. Here, the artist isn't quite sure how they'd like to draw the handle of the mug, so we generate three images that are all valid completions of the initial sketch, showing varying handles paired with the same outline of the body:
 
 ![](Sketch-a-Sketch/Sketch-a-Sketch/Sketch-a-Sketch.001.jpeg)
 
-## Provide suggested lines to help me draw
+## Providing suggested lines to help me draw
 
 With these generated images, *Sketch-a-Sketch* can provide suggestions on potential lines to draw: we generate potential completions of the existing drawing by running HED on the generated images, then averaging these 'completed sketches' to get an image of suggested lines: 
 
@@ -104,25 +104,25 @@ With these generated images, *Sketch-a-Sketch* can provide suggestions on potent
 
 The image caption and underlying diffusion backbone can significantly influence both the image visualizations and suggested lines. As with other text-controlled diffusion applications, we can modify the style or content of the generated images through prompting. In the following drawings, we control the style of visualizations for a sports car by changing a single word:
 
-**"A sports car, realistic"**
+**Prompt: "A sports car, realistic"**
 
 | **Input Sketch** | **Generated Image** | **Suggested Lines**
 |:--:| :--: | :--: |
 | ![](Sketch-a-Sketch/car_s.gif) | ![](Sketch-a-Sketch/car_v1_o1.gif) | ![](Sketch-a-Sketch/car_v1_p.gif) |
 
-**"A sports car, cartoon"**
+**Prompt: "A sports car, cartoon"**
 
 | **Input Sketch** | **Generated Image** | **Suggested Lines**
 |:--:| :--: | :--: |
 | ![](Sketch-a-Sketch/car_s.gif) | ![](Sketch-a-Sketch/car_v2_o1.gif) | ![](Sketch-a-Sketch/car_v2_p.gif) |
 
-**"A sports car, cel shaded"**
+**Prompt: "A sports car, cel shaded"**
 
 | **Input Sketch** | **Generated Image** | **Suggested Lines**
 |:--:| :--: | :--: |
 | ![](Sketch-a-Sketch/car_s.gif) | ![](Sketch-a-Sketch/car_v3_o1.gif) | ![](Sketch-a-Sketch/car_v3_p.gif) |
 
-**"A sports car, rusted"**
+**Prompt: "A sports car, rusted"**
 
 | **Input Sketch** | **Generated Image** | **Suggested Lines**
 |:--:| :--: | :--: |
@@ -132,7 +132,7 @@ The image caption and underlying diffusion backbone can significantly influence 
 
 We have previously seen that a ControlNet trained on one backbone (ex. Stable Diffusion 1.5) still works on fine-tuned versions of that backbone. This property also holds for our partial-sketch ControlNet model, enabling *Sketch-a-Sketch* to generate suggestions from models fine-tuned for particular domains. For instance, we can use [Ghibli Diffusion](https://huggingface.co/nitrosocke/Ghibli-Diffusion) to generate Ghibli-style characters:
 
-**"A young boy"**
+**Prompt: "A young boy"**
 
 | **Input Sketch** | **Generated Image** | **Suggested Lines**
 |:--:| :--: | :--: |
