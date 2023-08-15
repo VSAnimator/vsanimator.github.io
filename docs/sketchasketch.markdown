@@ -72,6 +72,14 @@ For instance, given the first few lines of a house, ControlNet fails to generate
 | :--: | :--: | :--: |
 | ![](Sketch-a-Sketch/house_sketch.png) | ![](Sketch-a-Sketch/controlnet_3.png) | ![](Sketch-a-Sketch/controlnet_2.png) |
 
+On the other hand, *Sketch-a-Sketch* generates the following images from the first few lines of a house:
+
+| **Input Sketch** | **Generated Image 1** | **Generated Image 2** |
+| :--: | :--: | :--: |
+| ![](Sketch-a-Sketch/house_sketch_redraw.png) | ![](Sketch-a-Sketch/ours_1.png) | ![](Sketch-a-Sketch/ours_3.png) |
+
+In these sketches, features corresponding to the lines are present in the generated images: a pillar supporting the roof, the top of a railing, the bottom of a porch, etc. However, there are plenty of major image features present in regions where the sketch contains only whitespace. 
+
 ## Make training data: Make partial sketches by randomly deleting lines
 
 [Photo-Sketch](https://mtli.github.io/sketch/) is the largest existing dataset of text-captioned images paired with sketches at partial stages of completion. However, this dataset is 1) restricted to sketches of only 1000 images (we would like a larger dataset), 2) the images are all of outdoor scenes (lacking diversity for general text-conditioned generation), and 3) are constructed by tracing over an existing image (imposing a ordering of strokes that may not correspond to the sketching process of many artists). 
@@ -84,7 +92,7 @@ Therefore, we programmatically construct our own dataset of captioned images pai
 | ![](Sketch-a-Sketch/20010_0.jpg) | ![](Sketch-a-Sketch/20010.jpg) | ![](Sketch-a-Sketch/20010_0.png) |
 | ![](Sketch-a-Sketch/20020_0.jpg) | ![](Sketch-a-Sketch/20020.jpg) | ![](Sketch-a-Sketch/20020_0.png) |
 
-We construct our paired dataset using 45000 images from [LAION Art](https://huggingface.co/datasets/laion/laion-art), and we train a [ControlNet](https://github.com/lllyasviel/ControlNet) model to condition [Stable Diffusion 1.5](https://huggingface.co/runwayml/stable-diffusion-v1-5) on the image-sketch pairs. The trained model takes a text caption and a partial sketch as inputs, and outputs generated images corresponding to a potential completion of the sketch. 
+We construct our paired dataset using 45000 images from [LAION Art](https://huggingface.co/datasets/laion/laion-art), and we train a [ControlNet](https://github.com/lllyasviel/ControlNet) model to condition [Stable Diffusion 1.5](https://huggingface.co/runwayml/stable-diffusion-v1-5) on the image-sketch pairs. The trained model takes a text caption and a partial sketch as inputs, and outputs generated images corresponding to a potential completion of the sketch. Note that by training on many different random partial sketches, of varying levels of completeness, the model learns to take a sketch of **any** level of completeness to a final image. That means that there are no assumptions about the order that people draw lines into the model. Users can draw lines in any order the wish, and *Sketch-to-Sketch* will still generate an image from the current state of the sketch.
 
 ## Generating possible images
 
@@ -94,9 +102,11 @@ When an artist isn't quite sure how they'd like to draw a part of an image, we c
 
 ## Providing suggested lines to help me draw
 
-With these generated images, *Sketch-a-Sketch* can provide suggestions on potential lines to draw: we generate potential completions of the existing drawing by running HED on the generated images, then averaging these 'completed sketches' to get an image of suggested lines: 
+With these generated images, *Sketch-a-Sketch* can provide suggestions on potential lines to draw. We generate potential completions of the existing drawing by running HED on the generated images, then averaging these 'completed sketches' to get an image of suggested lines: 
 
 ![](Sketch-a-Sketch/Sketch-a-Sketch/Sketch-a-Sketch.002.jpeg)
+
+The suggested lines feature echoes prior drawing help tools like [ShadowDraw](https://vision.cs.utexas.edu/projects/shadowdraw/shadowdraw.html), or image collection exploration tools like [AverageExplorer](https://www.cs.cmu.edu/~junyanz/projects/averageExplorer/).
 
 # Controlling image output
 
