@@ -74,6 +74,8 @@ For instance, given the first few lines of a house, ControlNet fails to generate
 
 On the other hand, *Sketch-a-Sketch* generates the following images from the first few lines of a house:
 
+**Prompt: "a photorealistic house"**
+
 | **Input Sketch** | **Generated Image 1** | **Generated Image 2** |
 | :--: | :--: | :--: |
 | ![](Sketch-a-Sketch/house_sketch_redraw.png) | ![](Sketch-a-Sketch/ours_1.png) | ![](Sketch-a-Sketch/ours_3.png) |
