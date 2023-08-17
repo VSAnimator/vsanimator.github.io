@@ -8,6 +8,18 @@ permalink: /collage_diffusion/
 
 [Paper](https://arxiv.org/abs/2303.00262) [Code](https://github.com/VSAnimator/collage-diffusion) [Demo](collagediffusion.stanford.edu)
 
+Diffusion models produce beautiful images, but finding just the right prompt and seed to generate the image you want can be a painstakingly long process. 
+This becomes more and more of a problem when trying to generate complex scenes, with many objects in a specific arrangement.
+When you finally have an image you mostly like, it still isn't easy to tweak a single object without changing the rest of the image! 
+
+*Collage Diffusion* extends typical diffusion controls--using text prompts, [personalizing]() generation, using [ControlNet]() to preserve edges or pose--to work on individual objects in a scene. **With *Collage Diffusion*, users can create complex scenes in minutes instead of prompt engineering for hours.**
+
+Users specify the image they want to generate in three simple steps: 1) upload (or generate) images of each object you want in the scene, with text descriptions 2) drag them to where they belong in the scene, and 3) write a text prompt corresponding to the scene. We call the image of an object paired with its text a *layer*. Given a sequence of layers, *Collage Diffusion* generates an image that preserves the arrangement and appearance of the individual objects while making the objects "fit together" in the same image. 
+
+[INSERT TEASER]
+
+
+
 Text-conditioned diffusion models are incredibly powerful, enabling users to generate high-quality images from a simple text prompt. 
 Diffusion models have the potential to enhance artistic pipelines, generate architectural renderings, let people virtually try-on clothes, and more.
 
@@ -89,3 +101,6 @@ Layered representations enable us to adapt and extend these mechanisms to many-o
 ## Links
 
 [Paper](https://arxiv.org/abs/2303.00262) [Code](https://github.com/VSAnimator/collage-diffusion) [Demo](collagediffusion.stanford.edu)
+
+
+If you're trying to get [Midjourney]() to generate a particular set of objects in particular parts of the image, get ready for hours of prompt engineering.
