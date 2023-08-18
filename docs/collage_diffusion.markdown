@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Layered Diffusion
+title: Collage Diffusion
 permalink: /collage_diffusion/
 ---
 
@@ -17,6 +17,8 @@ When you finally have an image you mostly like, it still isn't easy to tweak a s
 Users specify the image they want to generate in three simple steps: 1) upload (or generate) images of each object you want in the scene, with text descriptions 2) drag them to where they belong in the scene, and 3) write a text prompt corresponding to the scene. We call the image of an object paired with its text a *layer*, and we call the collection of layers along with the overall text prompt a *collage*. Given a collage, *Collage Diffusion* generates an image that preserves the arrangement and appearance of the individual objects while making the objects "fit together" in the same image. 
 
 <img src="collage_diffusion/teaser_v2.pdf" alt="drawing" width="800"/>
+
+<img src="collage_diffusion/teaser_cake.pdf" alt="drawing" width="800"/>
 
 With a layered representation, we can control a variety of characteristics of diffusion-generated images on a per-object basis, including spatial layout, visual appearance, and edge maps. In addition, we also gain fine-grained control over image harmonization--how strictly we respect the specification of each individual object when generating a cohesive image. 
 
