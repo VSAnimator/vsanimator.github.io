@@ -9,7 +9,7 @@ permalink: /sketchasketch/
 
 **Vishnu Sarukkai**, Chris Ré, and Kayvon Fatahalian
 
-**[Code](https://github.com/VSAnimator/Sketch-a-Sketch) \| [Demo](https://colab.research.google.com/drive/1Biw7s0BD_NtV3wC2lIjVaeg6qXj0KOTv?usp=sharing)**
+**[Code](https://github.com/VSAnimator/Sketch-a-Sketch) \| [HF Spaces Demo](https://huggingface.co/spaces/vsanimator/sketch-a-sketch-demo) \| [Colab Demo](https://colab.research.google.com/drive/1Biw7s0BD_NtV3wC2lIjVaeg6qXj0KOTv?usp=sharing)**
 
 It’s really fun playing with generative AI tools, but its incredibly hard to engineer text prompts that produce the specific images you want. You’ve probably seen sketch-to-image tools that aim to make it "easier" to control generative AI, but to get a good image, you typically need to control the AI with a fairly complete sketch. Since most of us are not great at drawing, that’s prevented most of us from using sketch to image. 
 
@@ -154,4 +154,4 @@ We have previously seen that a ControlNet trained on one backbone (ex. Stable Di
 
 In *Sketch-a-Sketch*, we integrate these capabilities together with the drawing process. At any point in making a sketch, the artist can generate visualizations and stroke modifications, and they can also refine the style of the prompt as they hone in on what they would like to draw. 
 
-**[Code](https://github.com/VSAnimator/Sketch-a-Sketch) \| [Demo](https://colab.research.google.com/drive/1Biw7s0BD_NtV3wC2lIjVaeg6qXj0KOTv?usp=sharing)**
+**[Code](https://github.com/VSAnimator/Sketch-a-Sketch) \| [HF Spaces Demo](https://huggingface.co/spaces/vsanimator/sketch-a-sketch-demo) \| [Colab Demo](https://colab.research.google.com/drive/1Biw7s0BD_NtV3wC2lIjVaeg6qXj0KOTv?usp=sharing)**
