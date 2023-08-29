@@ -12,7 +12,7 @@ Diffusion models produce beautiful images, but finding just the right prompt and
 This becomes more and more of a problem when trying to generate complex scenes, with many objects in a specific arrangement.
 When you finally have an image you mostly like, it still isn't easy to tweak a single object without changing the rest of the image! 
 
-*Collage Diffusion* extends typical diffusion controls--using text prompts, [personalizing]() generation, using [ControlNet]() to preserve edges or pose--to work on individual objects in a scene. **With *Collage Diffusion*, users can create complex scenes in minutes instead of prompt engineering for hours.**
+*Collage Diffusion* extends typical diffusion controls--using text prompts, [personalizing](https://textual-inversion.github.io/) generation, using [ControlNet](https://github.com/lllyasviel/ControlNet) to preserve edges or pose--to work on individual objects in a scene. **With *Collage Diffusion*, users can create complex scenes in minutes instead of prompt engineering for hours.**
 
 Users specify the image they want to generate in three simple steps: 1) upload (or generate) images of each object you want in the scene, with text descriptions 2) drag them to where they belong in the scene, and 3) write a text prompt corresponding to the scene. We call the image of an object paired with its text a *layer*, and we call the collection of layers along with the overall text prompt a *collage*. Given a collage, *Collage Diffusion* generates an image that preserves the arrangement and appearance of the individual objects while making the objects "fit together" in the same image. 
 
@@ -20,13 +20,13 @@ Users specify the image they want to generate in three simple steps: 1) upload (
 
 <img src="collage_diffusion/teaser_cake.pdf" alt="drawing" width="800"/>
 
-With a layered representation, we can control a variety of characteristics of diffusion-generated images on a per-object basis, including spatial layout, visual appearance, and edge maps. In addition, we also gain fine-grained control over image harmonization--how strictly we respect the specification of each individual object when generating a cohesive image. 
+With a layered representation, we can control several aspects of image harmonization on a per-object basis, including spatial layout, the preservation of visual appearance, and the preservation of edge maps. We also gain fine-grained control over the harmonization-fidelity tradeoff on a per-layer basis. Try out our demo [here](collagediffusion.stanford.edu)!
 
 # How it works
 
 ## Goal: harmonize, but preserve
 
-We have two main goals when generating images from a collage:
+We have two main goals when generating images from a sequence of layers:
 1. Harmonization: the objects in each layer are combined to produce a coherent, self-consistent image
 2. Fidelity: we preserve key attributes of the input layers. These may include:
     1. Spatial fidelity: we preserve the spatial arrangement of the objects described by different layers (the sushi is in the right half of the bento box, the ginger in the top left, etc. )
@@ -37,7 +37,7 @@ Note that *there is an inherent tradeoff between harmonization and fidelity*: to
 
 ## Preserving input layers
 
-One approach to generating a harmonized image from layered input involves constructing an initial composite image from the layers, and then harmonizing with [SDEdit](https://arxiv.org/abs/2108.01073). This [image-to-image]() pipeline adds noise to a starting image, then leveraging a learned diffusion model to remove the added noise. The added noise serves to remove details from the starting image while preserving its high-level structure. However, the SDEdit algorithm can't preserve the scene layout, let alone visual details of the individual layer images:
+One approach to generating a harmonized image from layered input involves constructing an initial composite image from the layers, and then harmonizing with [SDEdit](https://arxiv.org/abs/2108.01073). This [image-to-image](https://huggingface.co/docs/diffusers/using-diffusers/img2img) pipeline adds noise to a starting image, then leveraging a learned diffusion model to remove the added noise. The added noise serves to remove details from the starting image while preserving its high-level structure. However, the SDEdit algorithm can't preserve the scene layout, let alone visual details of the individual layer images:
 
 <img src="collage_diffusion/Step1.pdf" alt="drawing" width="800"/>
 
