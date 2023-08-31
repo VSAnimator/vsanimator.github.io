@@ -20,7 +20,7 @@ Users specify the image they want to generate in three simple steps: 1) upload (
 
 <img src="teaser_cake.png" alt="drawing" width="800"/>
 
-With a layered representation, we can control several aspects of image harmonization on a per-object basis, including spatial layout, the preservation of visual appearance, and the preservation of edge maps. We also gain fine-grained control over the harmonization-fidelity tradeoff on a per-layer basis. Try out our demo [here](collagediffusion.stanford.edu)!
+With a layered representation, we can control several aspects of image harmonization on a per-object basis, including spatial layout, the preservation of visual appearance, and the preservation of edge maps. We also gain fine-grained control over the harmonization-fidelity tradeoff on a per-layer basis. Try out our demo [here](http://collagediffusion.stanford.edu)!
 
 # How it works
 
