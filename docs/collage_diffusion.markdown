@@ -6,7 +6,7 @@ permalink: /collage_diffusion/
 
 **Vishnu Sarukkai**, Linden Li, Arden Ma, Chris Ré, and Kayvon Fatahalian
 
-**[Paper](https://arxiv.org/abs/2303.00262) \| [Code](https://github.com/VSAnimator/collage-diffusion) \| [Demo](collagediffusion.stanford.edu)**
+**[Paper](https://arxiv.org/abs/2303.00262) \| [Code](https://github.com/VSAnimator/collage-diffusion) \| [Demo](http://collagediffusion.stanford.edu)**
 
 Diffusion models produce beautiful images, but finding just the right prompt and seed to generate the image you want can be a painstakingly long process. 
 This becomes more and more of a problem when trying to generate complex scenes, with many objects in a specific arrangement.
@@ -88,5 +88,5 @@ The first image matches what we had in mind, and the process is complete!
 
 ## Links
 
-**[Paper](https://arxiv.org/abs/2303.00262) \| [Code](https://github.com/VSAnimator/collage-diffusion) \| [Demo](collagediffusion.stanford.edu)**
+**[Paper](https://arxiv.org/abs/2303.00262) \| [Code](https://github.com/VSAnimator/collage-diffusion) \| [Demo](http://collagediffusion.stanford.edu)**
 
