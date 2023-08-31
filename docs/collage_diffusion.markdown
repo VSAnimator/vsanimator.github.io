@@ -71,18 +71,21 @@ Layer information makes it way easier to generate images that respect user inten
 
 This collage has five different layers, and we will be able to control and edit each of these objects independently. First, we set per-layer noise levels to control harmonization and generates a set of images using *Collage Diffusion*. 
 
+| Option 1 | Option 2 | Option 3 |
+| :--: | :--: | :--: |
 | ![](collage_diffusion/cakeTable3_step1final/img2img-with_cac-with_ft-with_mask/7.jpg) | ![](collage_diffusion/cakeTable3_step1final/img2img-with_cac-with_ft-with_mask/5.jpg) | ![](collage_diffusion/cakeTable3_step1final/img2img-with_cac-with_ft-with_mask/1.jpg) |
-|:--:| :--: | :--: |
 
 We like most of the second output image, except for the cake. Leveraging the alpha masks extracted from the input layer images, we can selectively re-generate individual components of an image while keeping the rest constant! We do this by only adding noise to the input layers that we would like to alter:
 
+| Option 1 | Option 2 | Option 3 |
+| :--: | :--: | :--: |
 | ![](collage_diffusion/cakeTable3_step2final/img2img-with_cac-with_ft-with_mask/8.jpg) | ![](collage_diffusion/cakeTable3_step2final/img2img-with_cac-with_ft-with_mask/4.jpg) | ![](collage_diffusion/cakeTable3_step2final/img2img-with_cac-with_ft-with_mask/6.jpg) |
-|:--:| :--: | :--: |
 
 We like the cake from the third image! Now, we try out variants of the window in the background:
 
+| Option 1 | Option 2 | Option 3 |
+| :--: | :--: | :--: |
 | ![](collage_diffusion/cakeTable3_step3final/img2img-with_cac-with_ft-with_mask/1.jpg) | ![](collage_diffusion/cakeTable3_step3final/img2img-with_cac-with_ft-with_mask/3.jpg) | ![](collage_diffusion/cakeTable3_step3final/img2img-with_cac-with_ft-with_mask/4.jpg) |
-|:--:| :--: | :--: |
 
 The first image matches what we had in mind, and the process is complete!
 
