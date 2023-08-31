@@ -11,7 +11,7 @@ I am a Ph.D. student at Stanford University, co-advised by [Chris Ré](https://c
 
 ***Collage Diffusion***
 <br> **Vishnu Sarukkai**, Linden Li, Arden Ma, Chris Ré, and Kayvon Fatahalian. *Arxiv, 2023*. 
-<br> <sup> \[[Paper](https://arxiv.org/abs/2303.00262)\] \[[Code](https://github.com/VSAnimator/collage-diffusion)\]<sup>
+<br> <sup> \[[Paper](https://arxiv.org/abs/2303.00262)\] \[[Code](https://github.com/VSAnimator/collage-diffusion)\] \[[Blog]([https://github.com/VSAnimator/collage-diffusion](https://vsanimator.github.io/collage_diffusion/))\]<sup>
 
 ***Low-Shot Validation: Active Importance Sampling for Estimating Classifier Performance on Rare Categories***
 <br> Fait Poms\*, **Vishnu Sarukkai**\*, Ravi Teja Mullapudi, Nimit S. Sohoni, William R. Mark, Deva Ramanan, and Kayvon Fatahalian. *International Conference on Computer Vision (ICCV), 2021,* ***Oral Presentation***.
@@ -26,6 +26,10 @@ I am a Ph.D. student at Stanford University, co-advised by [Chris Ré](https://c
 <br> <sup>\[[Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2826674)\]<sup>
 
 ## Projects
+
+***Sketch-a-Sketch: Controlling diffusion-based image generation with just a few strokes***
+<br> **Vishnu Sarukkai**, Chris Ré, and Kayvon Fatahalian
+<br> <sup>\[[Blog](https://vsanimator.github.io/sketchasketch/)\]<sup>
 
 ***Forager: Rapid Data Exploration and Model Development***
 <br> Fait Poms, Mihir Garimella, **Vishnu Sarukkai**, Ravi Teja Mullapudi, Jeremy Barenholtz, and Kayvon Fatahalian
