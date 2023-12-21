@@ -10,7 +10,7 @@ I am a Ph.D. student at Stanford University, co-advised by [Chris Ré](https://c
 ## Publications
 
 ***Collage Diffusion***
-<br> **Vishnu Sarukkai**, Linden Li, Arden Ma, Chris Ré, and Kayvon Fatahalian. *Arxiv, 2023*. 
+<br> **Vishnu Sarukkai**, Linden Li, Arden Ma, Chris Ré, and Kayvon Fatahalian. *Winter Conference on Applications of Computer Vision (WACV), 2024*. 
 <br> <sup> \[[Paper](https://arxiv.org/abs/2303.00262)\] \[[Code](https://github.com/VSAnimator/collage-diffusion)\] \[[Blog](https://vsanimator.github.io/collage_diffusion/)\]<sup>
 
 ***Low-Shot Validation: Active Importance Sampling for Estimating Classifier Performance on Rare Categories***
