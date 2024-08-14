@@ -11,7 +11,7 @@ I am a Ph.D. student at Stanford University, co-advised by [Chris Ré](https://c
 
 ***Block and Detail: Scaffolding Sketch-to-Image Generation***
 <br> **Vishnu Sarukkai**, Lu Yuan*, Mia Tang*, Maneesh Agrawala, Kayvon Fatahalian. *UIST, 2024*. 
-<br> <sup> \[[Paper](https://arxiv.org/abs/2402.18116)\] \[[Code](https://github.com/BlockDetail/Block-and-Detail)\] <sup>
+<br> <sup> \[[Paper](https://arxiv.org/abs/2402.18116)\] <sup>
 
 ***MLMove: Learning to Move Like Professional Counter-Strike Players***
 <br> David Durst, Feng Xie, **Vishnu Sarukkai**, Brennan Shacklett, Iuri Frosio, Chen Tessler, Joohwan Kim, Carly Taylor, Gilbert Bernstein, Sanjiban Choudhury, Pat Hanrahan, Kayvon Fatahalian. *SCA, 2024*.
