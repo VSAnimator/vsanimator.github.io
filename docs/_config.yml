@@ -33,7 +33,7 @@ plugins:
   - jekyll-feed
 
 header_pages:
-  - collage_diffusion.markdown
+  - about.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
