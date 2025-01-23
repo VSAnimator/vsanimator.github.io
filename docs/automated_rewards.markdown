@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Automated Rewards via LLM-Generated Progress Functions
-permalink: /collage_diffusion/
+permalink: /automated_rewards/
 ---
 
 **Vishnu Sarukkai**, Brennan Shacklett, Zander Majercik, Kush Bhatia, Christopher Ré, Kayvon Fatahalian
