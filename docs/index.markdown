@@ -7,6 +7,8 @@ layout: page
 
 I am a Ph.D. student at Stanford University, co-advised by [Kayvon Fatahalian](http://graphics.stanford.edu/~kayvonf/) and [Chris Ré](https://cs.stanford.edu/~chrismre/). My broad interests include machine learning and computer graphics, and my recent work has focused on controllable diffusion models. Prior to my Ph.D, I received a B.S. in Computer Science at Stanford. In the past, I have worked with [Pat Hanrahan](https://profiles.stanford.edu/patrick-hanrahan) on metropolis light transport and path guiding, with [Stefano Ermon](https://cs.stanford.edu/~ermon/) on applications of GANs to satellite images, and with [Susan Athey](https://www.gsb.stanford.edu/faculty-research/faculty/susan-athey) on the dynamics of Bitcoin usage.
 
+Check out my [Substack](https://vsanimator.substack.com/) for thoughts on self-improving LLM agents. New posts (bi)weekly.  
+
 ## Controllable Image Generation
 
 ***Block and Detail: Scaffolding Sketch-to-Image Generation***
