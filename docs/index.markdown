@@ -5,9 +5,23 @@
 layout: page
 ---
 
-I am a Ph.D. student at Stanford University, co-advised by [Kayvon Fatahalian](http://graphics.stanford.edu/~kayvonf/) and [Chris Ré](https://cs.stanford.edu/~chrismre/). My broad interests include machine learning and computer graphics, and my recent work has focused on controllable diffusion models. Prior to my Ph.D, I received a B.S. in Computer Science at Stanford. In the past, I have worked with [Pat Hanrahan](https://profiles.stanford.edu/patrick-hanrahan) on metropolis light transport and path guiding, with [Stefano Ermon](https://cs.stanford.edu/~ermon/) on applications of GANs to satellite images, and with [Susan Athey](https://www.gsb.stanford.edu/faculty-research/faculty/susan-athey) on the dynamics of Bitcoin usage.
+I am a Ph.D. student at Stanford University, advised by [Kayvon Fatahalian](http://graphics.stanford.edu/~kayvonf/). My interests include LLM self-improvement and controllable diffusion models. Prior to my Ph.D, I received a B.S. in Computer Science at Stanford. In the past, I have worked with [Pat Hanrahan](https://profiles.stanford.edu/patrick-hanrahan) on metropolis light transport and path guiding, with [Stefano Ermon](https://cs.stanford.edu/~ermon/) on applications of GANs to satellite images, and with [Susan Athey](https://www.gsb.stanford.edu/faculty-research/faculty/susan-athey) on the dynamics of Bitcoin usage.
 
 Check out my [Substack](https://vsanimator.substack.com/) for thoughts on self-improving LLM agents. New posts (bi)weekly.  
+
+## Learning Agents
+
+***Self-Generated In-Context Examples Improve LLM Agents for Sequential Decision-Making Tasks***
+<br> **Vishnu Sarukkai**, Zhiqiang Xie, and Kayvon Fatahalian. Arxiv, 2024.
+<br> <sup> \[[Paper](https://arxiv.org/abs/2505.00234)\] \[[Code (coming soon)]()\]<sup>
+
+***Automated Rewards via LLM-Generated Progress Functions***
+<br> **Vishnu Sarukkai**, Brennan Shacklett, Zander Majercik, Kush Bhatia, Christopher Ré, Kayvon Fatahalian *Arxiv, 2024*.
+<br> <sup> \[[Paper](https://arxiv.org/abs/2410.09187)\] \[[Code (coming soon)]()\] \[[Blog](https://vsanimator.github.io/automated_rewards/)\]<sup>
+
+***MLMove: Learning to Move Like Professional Counter-Strike Players***
+<br> David Durst, Feng Xie, **Vishnu Sarukkai**, Brennan Shacklett, Iuri Frosio, Chen Tessler, Joohwan Kim, Carly Taylor, Gilbert Bernstein, Sanjiban Choudhury, Pat Hanrahan, Kayvon Fatahalian. *SCA, 2024*.
+<br> <sup> \[[Paper](https://davidbdurst.com/mlmove/Learning%20to%20Move%20Like%20Professional%20Counter-Strike%20Players.pdf)\] \[[Code](https://github.com/David-Durst/csknow)\] \[[Project Page](https://davidbdurst.com/mlmove/)\]<sup>
 
 ## Controllable Image Generation
 
@@ -22,16 +36,6 @@ Check out my [Substack](https://vsanimator.substack.com/) for thoughts on self-i
 ***Sketch-a-Sketch: Controlling diffusion-based image generation with just a few strokes***
 <br> **Vishnu Sarukkai**, Chris Ré, and Kayvon Fatahalian
 <br> <sup>\[[Blog](https://vsanimator.github.io/sketchasketch/)\]<sup>
-
-## Learning Agents
-
-***Automated Rewards via LLM-Generated Progress Functions***
-<br> **Vishnu Sarukkai**, Brennan Shacklett, Zander Majercik, Kush Bhatia, Christopher Ré, Kayvon Fatahalian *Arxiv, 2024*.
-<br> <sup> \[[Paper](https://arxiv.org/abs/2410.09187)\] \[[Code (coming soon)]()\] \[[Blog](https://vsanimator.github.io/automated_rewards/)\]<sup>
-
-***MLMove: Learning to Move Like Professional Counter-Strike Players***
-<br> David Durst, Feng Xie, **Vishnu Sarukkai**, Brennan Shacklett, Iuri Frosio, Chen Tessler, Joohwan Kim, Carly Taylor, Gilbert Bernstein, Sanjiban Choudhury, Pat Hanrahan, Kayvon Fatahalian. *SCA, 2024*.
-<br> <sup> \[[Paper](https://davidbdurst.com/mlmove/Learning%20to%20Move%20Like%20Professional%20Counter-Strike%20Players.pdf)\] \[[Code](https://github.com/David-Durst/csknow)\] \[[Project Page](https://davidbdurst.com/mlmove/)\]<sup>
 
 ## Efficient Model Validation
 
