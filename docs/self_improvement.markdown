@@ -52,9 +52,9 @@ This strategy prevents poor early seeds from snowballing while preserving valuab
 
 Even with DB-Cur, some successful trajectories may be noisy, redundant, or weak. To keep $\mathcal{D}$ compact and high-quality, we compute a **value score** for each trajectory $\tau$ based on how often it contributes to successful outcomes:
 
-```math
+$$
 Q(\tau)= \frac{\sum_{i\in\mathcal R(\tau)}\mathbf 1_{\text{success}_i}\,f_i(\tau)}{\sum_{i\in\mathcal R(\tau)}f_i(\tau)}
-```
+$$
 
 where:
 
