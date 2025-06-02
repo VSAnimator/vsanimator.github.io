@@ -6,7 +6,7 @@ permalink: /self_improvement/
 
 **Vishnu Sarukkai**, Zhiqiang Xie, Kayvon Fatahalian
 
-**[Paper](https://arxiv.org/abs/2505.00234) | [Code (coming soon)]()**
+**[Paper](https://arxiv.org/abs/2505.00234) \| [Code (coming soon)]()**
 
 How can we get language-model-based agents to learn from their own experience?
 
