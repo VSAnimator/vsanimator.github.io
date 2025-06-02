@@ -35,6 +35,18 @@ plugins:
 header_pages:
   - about.md
 
+# MathJax support
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  math_engine_opts:
+    preview: true
+    preview_as_code: true
+
+# Enable MathJax
+mathjax: true
+
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
