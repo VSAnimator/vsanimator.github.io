@@ -2,7 +2,7 @@
 
 layout: home
 title: Self-Generated In-Context Examples Improve LLM Agents for Sequential Decision-Making Tasks
-permalink: /self\_improvement/
+permalink: /self_improvement/
 ------------------------------
 
 **Vishnu Sarukkai**, Zhiqiang Xie, Kayvon Fatahalian
