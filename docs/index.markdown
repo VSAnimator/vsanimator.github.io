@@ -12,12 +12,12 @@ Check out my [Substack](https://vsanimator.substack.com/) for thoughts on self-i
 ## Learning Agents
 
 ***Self-Generated In-Context Examples Improve LLM Agents for Sequential Decision-Making Tasks***
-<br> **Vishnu Sarukkai**, Zhiqiang Xie, and Kayvon Fatahalian. Arxiv, 2024.
-<br> <sup> \[[Paper](https://arxiv.org/abs/2505.00234)\] \[[Code (coming soon)]()\]<sup>
+<br> **Vishnu Sarukkai**, Zhiqiang Xie, and Kayvon Fatahalian. Arxiv, 2025.
+<br> <sup> \[[Paper](https://arxiv.org/abs/2505.00234)\] \[[Blog](https://vsanimator.github.io/self_improvement/)\] \[[Code (coming soon)]()\]<sup>
 
 ***Automated Rewards via LLM-Generated Progress Functions***
 <br> **Vishnu Sarukkai**, Brennan Shacklett, Zander Majercik, Kush Bhatia, Christopher Ré, Kayvon Fatahalian *Arxiv, 2024*.
-<br> <sup> \[[Paper](https://arxiv.org/abs/2410.09187)\] \[[Code (coming soon)]()\] \[[Blog](https://vsanimator.github.io/automated_rewards/)\]<sup>
+<br> <sup> \[[Paper](https://arxiv.org/abs/2410.09187)\] \[[Blog](https://vsanimator.github.io/automated_rewards/)\] \[[Code (coming soon)]()\] <sup>
 
 ***MLMove: Learning to Move Like Professional Counter-Strike Players***
 <br> David Durst, Feng Xie, **Vishnu Sarukkai**, Brennan Shacklett, Iuri Frosio, Chen Tessler, Joohwan Kim, Carly Taylor, Gilbert Bernstein, Sanjiban Choudhury, Pat Hanrahan, Kayvon Fatahalian. *SCA, 2024*.
