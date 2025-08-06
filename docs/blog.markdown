@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Blog
+title: Blogging my Machine Learning Thoughts
 ---
 
-Welcome to my blog! Here you'll find my thoughts on machine learning, research, and other topics I find interesting. 
+I've heard that communication is half of the scientific process. This is an informal place where I'll be sharing my thoughts on (potentially unrelated) machine learning topics.
