@@ -7,12 +7,12 @@ layout: page
 
 I am a Ph.D. student at Stanford University, advised by [Kayvon Fatahalian](http://graphics.stanford.edu/~kayvonf/). My interests include LLM self-improvement and controllable diffusion models. Prior to my Ph.D, I received a B.S. in Computer Science at Stanford. In the past, I have worked with [Pat Hanrahan](https://profiles.stanford.edu/patrick-hanrahan) on metropolis light transport and path guiding, with [Stefano Ermon](https://cs.stanford.edu/~ermon/) on applications of GANs to satellite images, and with [Susan Athey](https://www.gsb.stanford.edu/faculty-research/faculty/susan-athey) on the dynamics of Bitcoin usage.
 
-Check out my [Substack](https://vsanimator.substack.com/) for thoughts on self-improving LLM agents. New posts (bi)weekly.  
+Check out my [Substack](https://vsanimator.substack.com/) for thoughts on self-improving LLM agents. Check out my [Blog](https://vsanimator.github.io/blog) for less structured thoughts from my PhD. 
 
 ## Learning Agents
 
 ***Self-Generated In-Context Examples Improve LLM Agents for Sequential Decision-Making Tasks***
-<br> **Vishnu Sarukkai**, Zhiqiang Xie, and Kayvon Fatahalian. Arxiv, 2025.
+<br> **Vishnu Sarukkai**, Zhiqiang Xie, and Kayvon Fatahalian. ICML PUT Workshop, 2025.
 <br> <sup> \[[Paper](https://arxiv.org/abs/2505.00234)\] \[[Blog](https://vsanimator.github.io/self_improvement/)\] \[[Code (coming soon)]()\]<sup>
 
 ***Automated Rewards via LLM-Generated Progress Functions***
