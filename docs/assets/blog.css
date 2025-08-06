@@ -1,0 +1,110 @@
+/* Blog-specific styles */
+
+.post {
+  margin-bottom: 2rem;
+}
+
+.post-header {
+  margin-bottom: 1.5rem;
+}
+
+.post-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.post-meta {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.post-content {
+  line-height: 1.6;
+  color: #333;
+}
+
+.post-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.post-content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.post-content ul, .post-content ol {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.post-content li {
+  margin-bottom: 0.5rem;
+}
+
+.post-content blockquote {
+  border-left: 4px solid #ddd;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+  color: #666;
+}
+
+.post-content code {
+  background-color: #f5f5f5;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+}
+
+.post-content pre {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.post-content pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Blog index styles */
+.blog .post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.blog .post-list li {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.blog .post-list li:last-child {
+  border-bottom: none;
+}
+
+.blog .post-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.blog .post-link:hover {
+  color: #007acc;
+  text-decoration: underline;
+}
+
+.blog .post-list h3 {
+  margin: 0.5rem 0;
+}
+
+.blog .post-list .post-meta {
+  margin-bottom: 0.5rem;
+} 

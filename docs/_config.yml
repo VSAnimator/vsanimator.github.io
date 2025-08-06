@@ -33,7 +33,10 @@ plugins:
   - jekyll-feed
 
 header_pages:
-  - about.md
+  - blog.markdown
+
+# Blog settings
+show_excerpts: true
 
 # MathJax support
 markdown: kramdown
