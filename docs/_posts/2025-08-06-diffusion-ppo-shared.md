@@ -8,8 +8,6 @@ tags: [diffusion]
 
 *“True enough, this compass does not point north...It points to the thing you want most in this world." -- Jack Sparrow.*
 
----
-
 When reinforcement learning (RL) researchers compare policy-based and value-based methods, a familiar tradeoff appears: do you learn to evaluate states (or state-action pairs) and derive actions by optimization, or do you learn to act directly?
 
 This distinction—between **learning how to evaluate** and **learning how to act**—shows up again in an unexpected place: **diffusion models**.
@@ -75,6 +73,7 @@ Both policy gradient methods and diffusion models can be viewed as instances of 
 This isn't to say diffusion models are doing RL—there's no reward signal or exploration loop. But structurally, they follow the same logic: define a sequential process and learn the policy that governs it directly.
 
 ---
+
 
 This structural parallel helps explain why diffusion models, like policy-based RL methods, tend to scale better and train more reliably than approaches that rely on learning scalar evaluation functions. When a system must produce a sequence of transitions through a complex space—whether navigating an agent's environment or traversing a model's latent space—it often helps to learn those transitions directly.
 
