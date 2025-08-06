@@ -6,9 +6,7 @@ categories: [diffusion]
 tags: [diffusion]
 ---
 
-*
-“True enough, this compass does not point north...It points to the thing you want most in this world." -- Jack Sparrow.
-*
+*“True enough, this compass does not point north...It points to the thing you want most in this world." -- Jack Sparrow.*
 
 ---
 
