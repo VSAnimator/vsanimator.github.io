@@ -71,12 +71,3 @@ Both policy gradient methods and diffusion models can be viewed as instances of 
 | Execution          | Follow policy to maximize return | Follow learned denoising path      |
 
 This isn't to say diffusion models are doing RL—there's no reward signal or exploration loop. But structurally, they follow the same logic: define a sequential process and learn the policy that governs it directly.
-
----
-
-
-This structural parallel helps explain why diffusion models, like policy-based RL methods, tend to scale better and train more reliably than approaches that rely on learning scalar evaluation functions. When a system must produce a sequence of transitions through a complex space—whether navigating an agent's environment or traversing a model's latent space—it often helps to learn those transitions directly.
-
-The next time you're implementing a diffusion model or training a policy gradient method, consider that you're working with two instances of the same powerful idea: sometimes it's better to learn *what to do* rather than *how good things are*.
-
-Let me know if you'd like to explore how this framing connects to planning, amortized inference, or recent work that *explicitly* treats generative modeling as decision-making.
