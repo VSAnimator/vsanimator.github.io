@@ -5,19 +5,21 @@
 layout: page
 ---
 
-I am a Ph.D. student at Stanford University, advised by [Kayvon Fatahalian](http://graphics.stanford.edu/~kayvonf/). My interests include LLM self-improvement and controllable diffusion models. Prior to my Ph.D, I received a B.S. in Computer Science at Stanford. In the past, I have worked with [Pat Hanrahan](https://profiles.stanford.edu/patrick-hanrahan) on metropolis light transport and path guiding, with [Stefano Ermon](https://cs.stanford.edu/~ermon/) on applications of GANs to satellite images, and with [Susan Athey](https://www.gsb.stanford.edu/faculty-research/faculty/susan-athey) on the dynamics of Bitcoin usage.
-
-Check out my [Substack](https://vsanimator.substack.com/) for thoughts on self-improving LLM agents. Check out my [Blog](https://vsanimator.github.io/blog) for less structured thoughts from my PhD. 
+I am a Ph.D. student at Stanford University, advised by [Kayvon Fatahalian](http://graphics.stanford.edu/~kayvonf/). Check out my [Substack](https://vsanimator.substack.com/) for thoughts on self-improving LLM agents. Check out my [Blog](https://vsanimator.github.io/blog) for less structured thoughts from my PhD. 
 
 ## Learning Agents
 
 ***Self-Generated In-Context Examples Improve LLM Agents for Sequential Decision-Making Tasks***
-<br> **Vishnu Sarukkai**, Zhiqiang Xie, and Kayvon Fatahalian. ICML PUT Workshop, 2025.
+<br> **Vishnu Sarukkai**, Zhiqiang Xie, and Kayvon Fatahalian. *Neurips, 2025.*
 <br> <sup> \[[Paper](https://arxiv.org/abs/2505.00234)\] \[[Blog](https://vsanimator.github.io/self_improvement/)\] \[[Code (coming soon)]()\]<sup>
+
+***Learning to Ball: Composing Policies for Long-Horizon Basketball Moves***
+<br> Pei Xu, Zhen Wu, Ruocheng Wang, **Vishnu Sarukkai**, Kayvon Fatahalian, Ioannis Karamouzas, Victor Zordan, C. Karen Liu. *SIGGRAPH Asia, 2025*
+<br> <sup> \[[Paper](https://arxiv.org/abs/2509.22442)\] \[[Project Page](https://pei-xu.github.io/Basketball)\] <sup>
 
 ***Automated Rewards via LLM-Generated Progress Functions***
 <br> **Vishnu Sarukkai**, Brennan Shacklett, Zander Majercik, Kush Bhatia, Christopher Ré, Kayvon Fatahalian *Arxiv, 2024*.
-<br> <sup> \[[Paper](https://arxiv.org/abs/2410.09187)\] \[[Blog](https://vsanimator.github.io/automated_rewards/)\] \[[Code (coming soon)]()\] <sup>
+<br> <sup> \[[Paper](https://arxiv.org/abs/2410.09187)\] \[[Blog](https://vsanimator.github.io/automated_rewards/)\] <sup>
 
 ***MLMove: Learning to Move Like Professional Counter-Strike Players***
 <br> David Durst, Feng Xie, **Vishnu Sarukkai**, Brennan Shacklett, Iuri Frosio, Chen Tessler, Joohwan Kim, Carly Taylor, Gilbert Bernstein, Sanjiban Choudhury, Pat Hanrahan, Kayvon Fatahalian. *SCA, 2024*.
@@ -30,8 +32,12 @@ Check out my [Substack](https://vsanimator.substack.com/) for thoughts on self-i
 <br> <sup> \[[Paper](https://arxiv.org/abs/2402.18116)\] \[[Code](https://github.com/BlockDetail/Block-and-Detail)\] \[[Project Page](https://miatang13.github.io/BlockAndDetail/)\] \[[Demo](http://34.82.197.67:5000/)\] <sup>
 
 ***Collage Diffusion***
-<br> **Vishnu Sarukkai**, Linden Li, Arden Ma, Chris Ré, and Kayvon Fatahalian. *WACV, 2024*. 
+<br> **Vishnu Sarukkai**, Linden Li, Arden Ma, Chris Ré, Kayvon Fatahalian. *WACV, 2024*. 
 <br> <sup> \[[Paper](https://arxiv.org/abs/2303.00262)\] \[[Code](https://github.com/VSAnimator/collage-diffusion)\] \[[Blog](https://vsanimator.github.io/collage_diffusion/)\]<sup>
+
+***Axes and Tags: LLM-Driven Design Galleries for Generative Content***
+<br> Asanshay Gupta*, **Vishnu Sarukkai***, Kayvon Fatahalian. *ICCV HiGEN Workshop, 2025*.
+<br> <sup> \[[Demo](https://designgalleries.app)\]<sup>
 
 ***Sketch-a-Sketch: Controlling diffusion-based image generation with just a few strokes***
 <br> **Vishnu Sarukkai**, Chris Ré, and Kayvon Fatahalian
@@ -56,3 +62,4 @@ Check out my [Substack](https://vsanimator.substack.com/) for thoughts on self-i
 ***Bitcoin Pricing, Adoption, and Usage: Theory and Evidence***
 <br> Susan Athey, Ivo Parashkevov, **Vishnu Sarukkai**, and Jing Xia. *Arxiv, 2016*.
 <br> <sup>\[[Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2826674)\]<sup>
+
