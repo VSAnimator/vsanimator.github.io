@@ -36,7 +36,7 @@ I am a Ph.D. student at Stanford University, advised by [Kayvon Fatahalian](http
 <br> <sup> \[[Paper](https://arxiv.org/abs/2303.00262)\] \[[Code](https://github.com/VSAnimator/collage-diffusion)\] \[[Blog](https://vsanimator.github.io/collage_diffusion/)\]<sup>
 
 ***Axes and Tags: LLM-Driven Design Galleries for Generative Content***
-<br> Asanshay Gupta*, **Vishnu Sarukkai***, Kayvon Fatahalian. *ICCV HiGEN Workshop, 2025*.
+<br> Asanshay Gupta\*, **Vishnu Sarukkai**\*, Kayvon Fatahalian. *ICCV HiGEN Workshop, 2025*.
 <br> <sup> \[[Paper](https://drive.google.com/file/d/1t7vkpzTz4GtM7mZRlcK8zAZiBInsEp0y/view?usp=share_link)\] \[[Demo](https://designgalleries.app)\] \[[Code](https://github.com/SuperAce100/axes-and-tags)] \[[Tutorial](https://axesandtags.com/tutorial)]<sup>
 
 ***Sketch-a-Sketch: Controlling diffusion-based image generation with just a few strokes***
@@ -62,6 +62,7 @@ I am a Ph.D. student at Stanford University, advised by [Kayvon Fatahalian](http
 ***Bitcoin Pricing, Adoption, and Usage: Theory and Evidence***
 <br> Susan Athey, Ivo Parashkevov, **Vishnu Sarukkai**, and Jing Xia. *Arxiv, 2016*.
 <br> <sup>\[[Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2826674)\]<sup>
+
 
 
 
