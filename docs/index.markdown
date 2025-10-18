@@ -37,7 +37,7 @@ I am a Ph.D. student at Stanford University, advised by [Kayvon Fatahalian](http
 
 ***Axes and Tags: LLM-Driven Design Galleries for Generative Content***
 <br> Asanshay Gupta\*, **Vishnu Sarukkai**\*, Kayvon Fatahalian. *ICCV HiGEN Workshop, 2025*.
-<br> <sup> \[[Paper](https://drive.google.com/file/d/1t7vkpzTz4GtM7mZRlcK8zAZiBInsEp0y/view?usp=share_link)\] \[[Demo](https://designgalleries.app)\] \[[Code](https://github.com/SuperAce100/axes-and-tags)] \[[Tutorial](https://axesandtags.com/tutorial)]<sup>
+<br> <sup> \[[Paper](https://www.dropbox.com/scl/fi/khsxotgeflgwnifyqepad/paper.pdf?rlkey=x3i4ut34ldmttwj2umyvnchao&st=brs3ecja&raw=1)\] \[[Demo](https://designgalleries.app)\] \[[Code](https://github.com/SuperAce100/axes-and-tags)] \[[Tutorial](https://axesandtags.com/tutorial)]<sup>
 
 ***Sketch-a-Sketch: Controlling diffusion-based image generation with just a few strokes***
 <br> **Vishnu Sarukkai**, Chris Ré, and Kayvon Fatahalian
@@ -62,6 +62,7 @@ I am a Ph.D. student at Stanford University, advised by [Kayvon Fatahalian](http
 ***Bitcoin Pricing, Adoption, and Usage: Theory and Evidence***
 <br> Susan Athey, Ivo Parashkevov, **Vishnu Sarukkai**, and Jing Xia. *Arxiv, 2016*.
 <br> <sup>\[[Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2826674)\]<sup>
+
 
 
 
