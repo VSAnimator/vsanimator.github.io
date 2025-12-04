@@ -9,6 +9,10 @@ I am a Ph.D. student at Stanford University, advised by [Kayvon Fatahalian](http
 
 ## Learning Agents
 
+***In-Context Distillation with Self-Consistency Cascades: A Simple, Training-Free Way to Reduce LLM Agent Costs***
+<br> **Vishnu Sarukkai**, Asanshay Gupta, James Hong, Michaël Gharbi, and Kayvon Fatahalian. *Arxiv, 2025.*
+<br> <sup> \[[Paper](https://arxiv.org/abs/2512.02543)\] <sup>
+
 ***Self-Generated In-Context Examples Improve LLM Agents for Sequential Decision-Making Tasks***
 <br> **Vishnu Sarukkai**, Zhiqiang Xie, and Kayvon Fatahalian. *Neurips, 2025.*
 <br> <sup> \[[Paper](https://arxiv.org/abs/2505.00234)\] \[[Blog](https://vsanimator.github.io/self_improvement/)\] \[[Code (coming soon)]()\]<sup>
@@ -62,6 +66,7 @@ I am a Ph.D. student at Stanford University, advised by [Kayvon Fatahalian](http
 ***Bitcoin Pricing, Adoption, and Usage: Theory and Evidence***
 <br> Susan Athey, Ivo Parashkevov, **Vishnu Sarukkai**, and Jing Xia. *Arxiv, 2016*.
 <br> <sup>\[[Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2826674)\]<sup>
+
 
 
 
