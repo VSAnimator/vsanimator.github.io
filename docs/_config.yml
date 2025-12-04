@@ -21,7 +21,7 @@
 title: Vishnu Sarukkai
 email: sarukkai@stanford.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Ph.D. student, advised by Kayvon Fatahalian. Research interests include LLM agents and diffusion models. 
+# Ph.D. student, advised by Kayvon Fatahalian. Research interests include LLM agents and diffusion models. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: VSarukkai
@@ -69,3 +69,4 @@ mathjax: true
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
