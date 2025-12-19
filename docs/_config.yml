@@ -32,9 +32,6 @@ theme: minima
 plugins:
   - jekyll-feed
 
-header_pages:
-  - blog
-
 # Blog settings
 show_excerpts: true
 
@@ -69,4 +66,5 @@ mathjax: true
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
 
