@@ -8,7 +8,7 @@ permalink: /self_improvement/
 
 **Vishnu Sarukkai**, Zhiqiang Xie, Kayvon Fatahalian
 
-**[Paper](https://arxiv.org/abs/2505.00234) \| [Code (coming soon)]()**
+**[Paper](https://arxiv.org/abs/2505.00234) \| [Code](https://github.com/VSAnimator/llm_self_improvement)**
 
 How can we get language-model-based agents to learn from their own experience?
 
@@ -100,6 +100,7 @@ Overall, self-curated experience offers a practical and effective scaling strate
 # Implications for Data Curation
 
 High-quality datasets are the cornerstone of effective LLM fine-tuning, yet such datasets rarely exist upfront for new, specialized tasks. Our methods demonstrate that agents themselves can autonomously generate and refine the data they need—not only enhancing their immediate performance through in-context learning but also producing valuable data suitable for subsequent fine-tuning (see [Appendix C of our paper](https://arxiv.org/abs/2505.00234)). This self-generated data pipeline offers a practical strategy for scaling high-performing LLM agents: rather than relying solely on costly human-curated datasets, agents can bootstrap their own continuous improvement, bridging the initial data gap.
+
 
 
 
