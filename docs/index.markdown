@@ -7,9 +7,9 @@ layout: page
 
 I am a Ph.D. student at Stanford University (graduating March 2026), advised by [Kayvon Fatahalian](http://graphics.stanford.edu/~kayvonf/). 
 
-General-purpose LLM agents aren't enough. My research enables agents to rapidly specialize and self-improve for specific tasks. Available for full-time industry research roles starting in April 2026. 
+General-purpose LLM agents aren't enough. My research enables agents to rapidly specialize and self-improve for specific tasks. Check out my [Substack](https://vsanimator.substack.com/) for thoughts on self-improving LLM agents. Also interested in controllable image generation.
 
-Check out my [Substack](https://vsanimator.substack.com/) for thoughts on self-improving LLM agents. 
+Available for full-time industry research roles starting in April 2026. 
 
 ## LLM-Based Agents and In-Context Learning
 
@@ -26,6 +26,8 @@ Check out my [Substack](https://vsanimator.substack.com/) for thoughts on self-i
 <br> <sup> \[[Paper](https://arxiv.org/abs/2410.09187)\] \[[Blog](https://vsanimator.github.io/automated_rewards/)\] <sup>
 
 ## Controllable Image Generation
+
+**Research Intern at Reve** Jun. 2025 to Sept. 2025.
 
 ***Block and Detail: Scaffolding Sketch-to-Image Generation***
 <br> **Vishnu Sarukkai**, Lu Yuan*, Mia Tang*, Maneesh Agrawala, Kayvon Fatahalian. *UIST, 2024*. 
@@ -72,6 +74,7 @@ Check out my [Substack](https://vsanimator.substack.com/) for thoughts on self-i
 ***Bitcoin Pricing, Adoption, and Usage: Theory and Evidence***
 <br> Susan Athey, Ivo Parashkevov, **Vishnu Sarukkai**, and Jing Xia. *Arxiv, 2016*.
 <br> <sup>\[[Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2826674)\]<sup>
+
 
 
 
