@@ -5,11 +5,9 @@
 layout: page
 ---
 
-I am a Ph.D. student at Stanford University (graduating March 2026), advised by [Kayvon Fatahalian](http://graphics.stanford.edu/~kayvonf/). 
+Formerly a Ph.D. student at Stanford University (graduated March 2026), advised by [Kayvon Fatahalian](http://graphics.stanford.edu/~kayvonf/). My PhD research enabled agents to rapidly specialize and self-improve for specific tasks. Check out my [Substack](https://vsanimator.substack.com/) for thoughts on self-improving LLM agents. 
 
-General-purpose LLM agents aren't enough. My research enables agents to rapidly specialize and self-improve for specific tasks. Check out my [Substack](https://vsanimator.substack.com/) for thoughts on self-improving LLM agents. Also interested in controllable image generation.
-
-Available for full-time industry research roles starting in April 2026. 
+I love video games. It's beautiful that agents can both create games and play games. 
 
 ## LLM-Based Agents and In-Context Learning
 
